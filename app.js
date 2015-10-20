@@ -79,8 +79,8 @@ app.get('/team', (req, res) => {
   }
 });
 
-app.get('/team/jdoe', (req, res) => {
-  var result = team.one('jdoe');
+app.get('/team/*', (req, res) => {
+  var result = team.one(req.path.slice(6));
   if (!result.success) {
     notFound404(req, res);
   } else {
@@ -91,76 +91,10 @@ app.get('/team/jdoe', (req, res) => {
   }
 });
 
-app.get('/team/jfiaschetti', (req, res) => {
-  var result = team.one('jfiaschetti');
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
-});
-
-app.get('/team/awbrown', (req, res) => {
-  var result = team.one('awbrown');
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
-});
-
-app.get('/team/cjkerr', (req, res) => {
-  var result = team.one('cjkerr');
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
-});
-
-app.get('/team/jdparker', (req, res) => {
-  var result = team.one('jdparker');
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
-});
-
-app.get('/team/lyeboah', (req, res) => {
-  var result = team.one('lyeboah');
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
-});
-
-app.get('/team/prrapo', (req, res) => {
-  var result = team.one('prrapo');
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
+app.get('/about/', (req, res) => {
+  res.render('about', {
+    pageTestScript: '/qa/tests-about.js'
+  });
 });
 
 //////////////////////////////////////////////////////////////////////
