@@ -85,24 +85,6 @@ app.get('/team', (req, res) => {
   }
 });
 
-app.get('/team/', (req, res) => {
-  var result = team.all();
-
-  if(Object.keys(req.query).length !== 0){
-    console.log(Object.keys(req.query).length);
-    result = team.one(req.query.user);
-  }
-
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
-});
-
 app.get('/team/*', (req, res) => {
   var result = team.one(req.path.slice(6));
   if (!result.success) {
