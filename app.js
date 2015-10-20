@@ -68,7 +68,13 @@ app.use(testmw);
 var team = require('./lib/team.js');
 
 app.get('/team', (req, res) => {
-  var result = team.all();
+  var result = null;
+  if(req.query.user){
+  	result = team.one(req.query.user);
+  }
+  else {
+    result = team.all();
+  }
   if (!result.success) {
     notFound404(req, res);
   } else {
