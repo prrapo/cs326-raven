@@ -7,13 +7,13 @@ html, body {
 
 h1 {
 	font-size: 4em;
-	color: SteelBlue;
+	color: MediumSeaGreen;
 	text-align: center;
 }
 
 h2 {
 	font-size: 2em;
-	color: SteelBlue;
+	color: MediumSeaGreen;
 	text-align: center;
 }
 
@@ -25,6 +25,7 @@ ul {
 
 li {
 	text-align: center;
+	font-size: 1.5em;
 }
 
 img {
