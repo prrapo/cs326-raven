@@ -17,6 +17,12 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	font-size: 2em;
+	color: Black;
+	text-align: left;
+}
+
 ul {
 	list-style-type: none;
 	padding: 0;
