@@ -34,12 +34,20 @@ ul {
 	margin: 0;
 }
 
+.link {
+	text-align: center;
+	font-size: 2em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	padding-bottom: 3em;
+}
+
 li {
 	text-align: center;
 	font-size: 1.5em;
 }
 
-p {
+p, .body {
 	font-size: 1em;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -47,4 +55,10 @@ p {
 img {
 	display: block;
 	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.logo {
+	margin-top: 3em;
 }
