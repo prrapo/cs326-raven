@@ -68,15 +68,9 @@ app.use(testmw);
 var team = require('./lib/team.js');
 
 app.get('/', (req, res) => {
-  var result = team.all();
-  if (!result.success) {
-    notFound404(req, res);
-  } else {
-    res.render('team', {
-      members: result.data,
-      pageTestScript: '/qa/tests-team.js'
-    });
-  }
+  res.render('home', {
+    pageTestScript: '/qa/tests-home.js'
+  });
 });
 
 app.get('/team/', (req, res) => {
