@@ -109,7 +109,7 @@ app.get('/about/', (req, res) => {
   });
 });
 
-app.get('/recipe/', (req, res) => {
+app.get('/myrecipes/', (req, res) => {
   res.render('recipe', {
     pageTestScript: '/qa/tests-recipe.js'
   });
