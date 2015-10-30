@@ -1,13 +1,25 @@
 html, body {
+	margin: 0;
 	padding: 0;
-	font-family: Futura, Arial, sans-serif;
-	background: GhostWhite;
-	margin-left: 5em;
-	margin-right: 5em;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.navbar {
+	background-color: MediumSeaGreen;
+	margin: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+h1, h2, h3, .navlink {
+	font-weight: 200;
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 3em;
 	color: MediumSeaGreen;
 	text-align: center;
 	margin-top: 0;
@@ -42,9 +54,29 @@ ul {
 	padding-bottom: 3em;
 }
 
+.navlink {
+	text-align: center;
+	font-size: 18pt;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 3em;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
 li {
 	text-align: center;
 	font-size: 1.5em;
+}
+
+.rightContainer {
+	float: right;
+	display: inline;
+}
+
+.leftContainer {
+	float: left;
 }
 
 p, .body {
@@ -60,5 +92,5 @@ img {
 }
 
 .logo {
-	margin-top: 3em;
+	margin-top: 5em;
 }
