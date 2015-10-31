@@ -5,7 +5,7 @@ html, body {
 }
 
 .navbar {
-	background-color: MediumSeaGreen;
+	background-color: #8cc63f;
 	margin: 0;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -20,7 +20,7 @@ h1, h2, h3, .navlink {
 
 h1 {
 	font-size: 3em;
-	color: MediumSeaGreen;
+	color: #8cc63f;
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
 	font-size: 2em;
-	color: MediumSeaGreen;
+	color: #8cc63f;
 	text-align: center;
 	margin-top: .5em;
 	margin-bottom: .5em;
@@ -51,18 +51,32 @@ ul {
 	font-size: 2em;
 	margin-left: 1.5em;
 	margin-right: 1.5em;
-	padding-bottom: 3em;
+}
+
+.navlogo {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	float: left;
 }
 
 .navlink {
 	text-align: center;
 	font-size: 18pt;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-	padding-bottom: 3em;
+	padding: 1.5em;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	color: white;
 	text-decoration: none;
+}
+
+.navlink:hover {
+	color: DimGray;
+}
+
+.mockup {
+	margin: auto;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 li {
@@ -73,10 +87,12 @@ li {
 .rightContainer {
 	float: right;
 	display: inline;
+	margin-top: 1em;
 }
 
 .leftContainer {
 	float: left;
+	margin-top: 1em;
 }
 
 p, .body {
@@ -85,12 +101,11 @@ p, .body {
 }
 
 img {
-	display: block;
-	margin: auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
 }
 
 .logo {
+	display: block;
+	margin: auto;
 	margin-top: 5em;
+	margin-bottom: 2em;
 }
